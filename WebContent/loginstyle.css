@@ -1,0 +1,60 @@
+html,body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body {
+    background-image: url("assets/images/login-photo.jpg");
+    background-size: cover;
+}
+.overlay{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -99;
+    background: rgba(100, 0, 0, 0.42);
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+
+.card {
+    float: none;
+    top: auto;
+    left: auto;
+    height: 28rem;
+    padding: 25px 25px 25px 25px;
+    align-content: space-evenly;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7) !important;
+}
+.logo {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+}
+.motto {
+    position: relative;
+    top: 47px;
+}
+#login_form {
+    margin: auto;
+}
+
+#login_error_message {
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context>
+
+    <!-- Data source setup for no Data Pooling -->
+    <!--
+    <Resource name="jdbc/moviedb"
+              auth="Container"
+              driverClassName="com.mysql.jdbc.Driver"
+              type="javax.sql.DataSource"
+              username="mytestuser"
+              password="My6$Password"
+              url="jdbc:mysql://localhost:3306/moviedb"/>
+    -->
+
+    <!-- Data source setup for no Data Pooling - Slave -->
+    <!--
+    <Resource name="jdbc/moviedb"
+              auth="Container"
+              driverClassName="com.mysql.jdbc.Driver"
+              type="javax.sql.DataSource"
+              username="mytestuser"
+              password="My6$Password"
+              url="jdbc:mysql://172.31.30.173:3306/moviedb"/>
+    -->
+
+    <!-- Data Source Sets up for Data Pooling -->
+
+    <Resource name="jdbc/moviedb"
+              auth="Container"
+              driverClassName="com.mysql.jdbc.Driver"
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+              maxTotal="100" maxIdle="30" maxWaitMillis="10000"
+              type="javax.sql.DataSource"
+              username="mytestuser"
+              password="My6$Password"
+              url="jdbc:mysql://localhost:3306/moviedb?autoReconnect=true&amp;sslMode=DISABLED&amp;cachePrepStmts=true"/>
+
+
+    <!-- Master Data Source for connecting Slave to Master DB -->
+    <!--
+    <Resource name="jdbc/moviedb"
+              auth="Container"
+              driverClassName="com.mysql.jdbc.Driver"
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+              maxTotal="100" maxIdle="30" maxWaitMillis="10000"
+              type="javax.sql.DataSource"
+              username="mytestuser"
+              password="My6$Password"
+              url="jdbc:mysql://172.31.30.173:3306/moviedb?autoReconnect=true&amp;sslMode=DISABLED&amp;cachePrepStmts=true"/>
+    -->
+</Context>

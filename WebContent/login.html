@@ -1,0 +1,65 @@
+<!-- This page will be redirected from any url if you are not logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login to Fablix</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+<!-- Set the method to POST to avoid showing the username/password in the URL
+     The default action is disabled to allow your own implementation. -->
+<div class="overlay"></div>
+<div class="card text-center" style="width: 28rem;">
+    <div class="logo">
+        <img src="assets/graphics/fabflix-text.svg">
+    </div>
+    <div class="motto">
+        <h2>Movies just one click away.</h2>
+    </div>
+    <form id="login_form" method="post" action="#">
+        <br><br>
+        <label><b>Username</b></label>
+        <label>
+            <input name="username" placeholder="Enter Username" type="text">
+        </label>
+        <br><br>
+        <label><b>Password</b></label>
+        <label>
+            <input name="password" placeholder="Enter Password" type="password">
+        </label>
+        <br>
+        <!--<FORM ACTION="form-recaptcha" METHOD="POST">-->
+            <div class="g-recaptcha" data-sitekey="6Ld9B8UaAAAAAAUQQSufreBRZrG17QCQ3c_i-VwG"></div>
+        <!--</FORM>-->
+        <div id="login_error_message"></div>
+        <br>
+        <div class="signinbutton">
+            <input type="submit" value="Login"
+                   style= "background-color:#E94B3C;
+                    border-radius:28px;
+                    border:1px solid #ab1919;
+                    display:inline-block;
+                    cursor:pointer;
+                    color:#ffffff;
+                    font-family:Arial;
+                    font-size:20px;
+                    padding:16px 115px;
+                    text-decoration:none;
+                    text-shadow:0px 1px 0px #2f6627;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center">
+        </div>
+    </form>
+</div>
+
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<!-- include our own JS file -->
+<script src="login.js"></script>
+
+</body>
+</html>

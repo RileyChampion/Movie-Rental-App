@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+}
+
+#fabflix-video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.fabflix-video-container-video {
+    /*!*object-fit: cover;*!*/
+    /*!*width: 100vw;*!*/
+    /*!*height: 100vh;*!*/
+    /*!*position: fixed;*!*/
+    /*!*top: 0;*!*/
+    /*!*left: 0;*!*/
+    /*!*z-index: -100;*!*/
+    /*position: absolute;*/
+    /*z-index: -1;*/
+    /*overflow: hidden;*/
+    /*width: 100%;*/
+    /*height: calc(91% + 7px);*/
+    width: 128vw;
+    height: 56.25vw;
+    min-height: 140vh;
+    min-width: 272.77vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*.fabflix-video-container iframe {*/
+/*    position: absolute;*/
+/*    z-index: -1;*/
+/*    overflow: hidden;*/
+/*    width: 100%;*/
+/*    height: calc(91% + 7px);*/
+/*}*/
+.fabflix-video-container-video #player {
+    max-height: none !important;
+    height: auto;
+}
+
+.vp-telecine video {
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.fabflix-video-container-video-overlay {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -99;
+    background: rgba(0, 0, 0, 0.42);
+}
+
+.fabflix-dashboard-content {
+    width: 71vw;
+    margin: 10vw auto 0;
+    text-align: center;
+}
+.fabflix-dashboard-content h1 {
+    padding: 75px 0;
+    color: white;
+    font-size: 100px;
+}
+.fabflix-search {
+    padding-right: 77px;
+    background: rgba(196, 196, 196, 0.51);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-size: 25px;
+}
+.fabflix-search::placeholder {
+    color: darkgrey;
+}
+
+.form-control:valid {
+    background-color: white;
+}
+
+.fabflix-dropdown {
+    margin: 43px auto;
+}
+
+.fabflix-submit-button {
+    width: 68px;
+    height: 47.500px;
+    margin-left: -87px;
+    font-size: 31px;
+    padding: 0px 1px;
+    z-index: 100;
+    box-shadow: -6px 0px 4px -1px rgba(0,0,0,0.16);
+    background: transparent;
+    border: none;
+}
+.fabflix-submit-button:hover{
+    background-color: #E94B3C !important;
+    color: white !important;
+}
+
+.fabflix-submit-button-focus {
+    color: #2E2E2E !important;
+}
+
+.fabflix-header-user-name {
+    color: #E94B3C;
+
+}
+.form-group {
+    width: 700px;
+    margin: auto;
+}
+
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
+.autocomplete-searchbox {
+    height: 50px;
+    width: 600px;
+}
+
+/*@media (min-aspect-ratio: 16/9) {*/
+/*    #fabflix-video-container {*/
+/*        width:100%;*/
+/*        height: auto;*/
+/*    }*/
+/*}*/
+/*@media (max-aspect-ratio: 16/9) {*/
+/*    #fabflix-video-container {*/
+/*        width:auto;*/
+/*        height: 100%;*/
+/*    }*/
+/*}*/
+
+@media (max-width: 985px) {
+    .form-group {
+        width: 100%;
+    }
+}

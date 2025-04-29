@@ -1,0 +1,61 @@
+.header-text {
+    width: 50%;
+    margin: auto auto 20px;
+}
+
+.header-text h3, .header-text p {
+    text-align: left;
+}
+
+.table-row{
+    cursor:pointer;
+}
+.genres-container #movie_genres {
+    display: flex;
+}
+.genres-container {
+    display: flex;
+    align-items: center;
+}
+.genres-container .pill {;
+    font-size: 15px;
+    margin: auto auto auto 5px;
+    padding: 5px;
+    background: rosybrown;
+    border-radius: 10px;
+    color: white;
+    background: rgba(75, 56, 56, 0.2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2)
+}
+
+.genres-container p {
+    margin: 0px 5px 10px 0px;
+}
+
+.table {
+    margin-bottom: 0rem !important;
+}
+
+.header-text p {
+    font-weight: 100;
+    color: peachpuff;
+}
+
+.table-container {
+    max-height: 68vh;
+    height: fit-content;
+}
+
+@media (max-width: 580px) {
+
+    .header-text {
+        width: 80%;
+    }
+    .header-text h1 {
+        font-size: 15vw;
+    }
+    .table {
+        font-size: 4vw;
+    }
+}
